@@ -34,6 +34,7 @@
   },
   "devDependencies": {
     "@types/fs-extra": "^11.0.4",
+    "@types/marked-terminal": "^6.0.1",
     "@types/node": "^20.9.0",
     "@types/terminal-kit": "^2.5.4",
     "@types/wordwrap": "^1.0.3",
