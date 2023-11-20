@@ -1,0 +1,53 @@
+{
+  "name": "content-qa",
+  "version": "0.0.1",
+  "description": "A command line utility to ",
+  "scripts": {
+    "start": "esno src/cli.ts",
+    "build": "tsup src/cli.ts --format cjs --minify --dts-resolve --clean",
+    "dev": "tsup src/cli.ts --format cjs --minify --dts-resolve --clean --watch",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Jeff Schofield <jeff@jeffschofield.com>",
+  "license": "MIT",
+  "bin": {
+    "content-qa": "./dist/cli.js",
+    "cqa": "./dist/cli.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "fast-glob": "^3.3.2",
+    "ffmpeg-static": "^5.2.0",
+    "fs-extra": "^11.1.1",
+    "marked": "^10.0.0",
+    "marked-terminal": "^6.1.0",
+    "openai": "^4.17.4",
+    "pdfreader": "^3.0.2",
+    "puppeteer": "^21.5.1",
+    "terminal-kit": "^3.0.1",
+    "wordwrap": "^1.0.0",
+    "yargs": "^17.7.2",
+    "yt-dlp-wrap": "^2.3.12"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^20.9.0",
+    "@types/terminal-kit": "^2.5.4",
+    "@types/wordwrap": "^1.0.3",
+    "@types/yargs": "^17.0.31",
+    "@typescript-eslint/eslint-plugin": "^6.11.0",
+    "@typescript-eslint/parser": "^6.11.0",
+    "eslint": "^8.54.0",
+    "eslint-config-node": "^4.1.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "esno": "^4.0.0",
+    "prettier": "^3.1.0",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2"
+  }
+}
