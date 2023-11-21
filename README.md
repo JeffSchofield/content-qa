@@ -76,36 +76,12 @@ content-qa --input "content/**/*.txt"
 
 Once the inputs are gathered, the system message is built, which is then used to establish a connection with the chatbot agent. You can interact with the agent through the CLI and use it to perform quality analysis or receive information based on the provided content.
 
-## Extending the Tool
-
-The tool is designed to be extensible:
-
-- New file types can be supported by adding custom content gathering functions.
-- Additional chatbot providers can be integrated alongside the current mock and OpenAI implementations.
-
-### Adding Providers
-
-Implement a new provider module that conforms to the `ChatbotProvider` interface.
-
-For instance, to add a new Mock provider, write:
-
-```typescript
-import { Readable } from "stream";
-import { ChatbotProvider, ChatbotMessageOptions } from "../types";
-
-const MockProvider: ChatbotProvider = {
-  // Implement the required functions here
-};
-
-export default MockProvider;
-```
-
 ## Development
 
 The tool can be run during development through npm:
 
 ```bash
-npm run start -i 
+npm run start -i your_input
 ```
 
 Run the tool in development mode by executing:
@@ -116,7 +92,7 @@ npm run dev
 
 ## License
 
-Content QA is released under the MIT License. See the `LICENSE` file for details. 
+Content QA is released under the MIT License. See the `LICENSE` file for details.
 
 ## Contact
 
